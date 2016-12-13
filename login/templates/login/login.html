@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<head>
+    <meta charset="utf-8">
+    <title>Paler Octavian</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="logo-container">
+        <img class="logo" src="{% static 'images/uninet-logo.svg' %}" alt="">
+        </div>
+
+      <div class="form-style">
+        <form>
+        <input type="email" name="field1" placeholder="Email" />
+        <input type="password" name="field2" placeholder="Password" />
+        <input type="submit" value="Send" />
+        <input type="submit" value="Recover">
+        </form>
+      </div>
+
+    </div>
+</body>
