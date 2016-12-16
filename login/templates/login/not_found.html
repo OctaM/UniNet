@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>UniNet</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'login/login_invalid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
 </head>
 <body>
     <div class="main-container">
@@ -13,7 +13,8 @@
         </div>
 
       <div class="form-style">
-        <form class="form-class" action="/login/loginUser/" method="post">
+        <form action="/login/loginUser/" method="post">
+            <p class="error-message">Ati introdus datele gresit.<p>
             {% csrf_token %}
             <label for="usernameid"></label>
             <input id="usernameid" type="email" name="username" placeholder="Email" />

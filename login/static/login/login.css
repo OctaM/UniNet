@@ -94,3 +94,13 @@ body {
   height: auto;
 
 }
+
+.error-message {
+    text-align : center;
+    font-weight: bold;
+    color      : red;
+}
+
+form {
+    margin-bottom: 0px;
+}

@@ -94,3 +94,9 @@ body {
     width : 90%;
     height: auto;
 }
+
+.error-message {
+    text-align : center;
+    font-weight: bold;
+    color      : red;
+}

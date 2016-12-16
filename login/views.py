@@ -29,7 +29,7 @@ def loginUser(request):
                 }
                 return render(request, "newsfeed/index.html")
             else:
-                return HttpResponse("Nu s-a logat")
+                return render(request, "login/not_found.html")
         else:
             return render(request, "login/login_invalid.html")
 

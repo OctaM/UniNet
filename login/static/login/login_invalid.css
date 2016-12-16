@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+
 .form-style {
     font     : 95% Arial, Helvetica, sans-serif;
     max-width: 400px;
@@ -44,6 +45,7 @@ body {
     border-right-style: none;
     border-left-style : none;
     color             : #fff;
+    border-radius: 7px;
 }
 
 .form-style input[type="submit"]:hover {
@@ -67,4 +69,8 @@ body {
 .logo {
     width : 90%;
     height: auto;
+}
+
+.form-class {
+    margin-bottom: 0px;
 }
