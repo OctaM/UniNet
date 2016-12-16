@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = "login.User"
 AUTHENTICATION_BACKENDS = ('login.backends.CustomUserAuth',)
+LOGIN_URL = "/login/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

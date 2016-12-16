@@ -9,7 +9,6 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('login', '0001_initial'),
         ('newsfeed', '0004_auto_20161213_1412'),
     ]
 

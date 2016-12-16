@@ -31,32 +31,6 @@ body {
     font              : 95% Arial, Helvetica, sans-serif;
 }
 
-.form-style input[type="email"],
-.form-style input[type="password"] {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition   : all 0.30s ease-in-out;
-    -ms-transition    : all 0.30s ease-in-out;
-    -o-transition     : all 0.30s ease-in-out;
-    outline           : none;
-    box-sizing        : border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing   : border-box;
-    width             : 100%;
-    background        : #fff;
-    margin-bottom     : 4%;
-    border            : 1px solid #ccc;
-    padding           : 3%;
-    color             : #555;
-    font              : 95% Arial, Helvetica, sans-serif;
-}
-
-.form-style input[type="email"]:focus,
-.form-style input[type="password"]:focus {
-    box-shadow: 0 0 5px #62056c;
-    padding   : 3%;
-    border    : 1px solid #62056c;
-}
-
 .form-style input[type="submit"] {
     box-sizing        : border-box;
     -webkit-box-sizing: border-box;

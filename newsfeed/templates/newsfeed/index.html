@@ -1,9 +1,1 @@
-{% if all_news %}
-    <ul>
-        {% for news in all_news %}
-            <li><a href="{% url 'newsfeed:details' news.id %}">{{ news.text }}</a> </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <h1>You don't have any news</h1>
-{% endif %}
+Hello {{ request.user.get_username }}!
