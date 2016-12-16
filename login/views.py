@@ -7,29 +7,21 @@ from login.forms import UserLoginForm
 
 
 def login(request):
-    return render(request, "login/login.html", {})
+    return render(request, "login/login.html")
 
-def loginUser(request, success_url=None):
+
+def loginUser(request):
     if request.method == 'POST':
-        form = UserLoginForm(request.POST)
-        if form.is_valid():
-            return HttpResponse("Am ajuns cu bine aici")
-            user = auth.authenticate(email=request.POST.get('username'),
-                                    password=request.POST.get('password'))
+        login_form = UserLoginForm(request.POST)
+        if login_form.is_valid():
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = auth.authenticate(username=username, password=password)
+
             if user is not None:
-                auth.login(request, user)
-                messages.error(request, "You have successfully logged in")
-                if success_url:
-                    return redirect(reverse(success_url))
-                else:
-                    return redirect(reverse('profile'))
+                return HttpResponse("s-a logat")
             else:
-                form.add_error(None, "Your email or password was not recognised")
+                return HttpResponse("Nu s-a logat")
+        else:
+            return HttpResponse("Form nu valid")
 
-    else:
-        form = UserLoginForm()
-
-    args = {'form': form}
-    args.update(csrf(request))
-    #return HttpResponse("Am ajuns cu bine aici")
-    return render(request, 'login/login.html', args)
