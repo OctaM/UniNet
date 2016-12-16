@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Paler Octavian</title>
+    <title>UniNet</title>
     <link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
 </head>
 <body>
@@ -13,11 +13,14 @@
         </div>
 
       <div class="form-style">
-        <form>
-        <input type="email" name="field1" placeholder="Email" />
-        <input type="password" name="field2" placeholder="Password" />
-        <input type="submit" value="Send" />
-        <input type="submit" value="Recover">
+        <form action="/login/loginUser/" method="post">
+            {% csrf_token %}
+            <label for="usernameid"></label>
+            <input id="usernameid" type="email" name="username" placeholder="Email" />
+            <label for="passwordid"></label>
+            <input id="passwordid" type="password" name="password" placeholder="Password" />
+            <input type="submit" value="Send" />
+            <input type="submit" value="Recover">
         </form>
       </div>
 
