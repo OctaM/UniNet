@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<head>
+    <meta charset="utf-8">
+    <title>UniNet</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="logo-container">
+        <img class="logo" src="{% static 'images/uninet-logo.svg' %}" alt="">
+        </div>
+
+      <div class="form-style">
+        <form action="/login/loginUser/" method="post">
+            <p class="error-message">Ati introdus datele gresit.<p>
+            {% csrf_token %}
+            <label for="usernameid"></label>
+            <input id="usernameid" type="email" name="username" placeholder="Email" />
+            <label for="passwordid"></label>
+            <input id="passwordid" type="password" name="password" placeholder="Password" />
+            <input type="submit" value="Send" />
+
+        </form>
+          <input type="submit" value="Recover">
+      </div>
+
+    </div>
+</body>

@@ -1,6 +1,7 @@
 from django.db import models
 from login.models import User
 
+
 # this is the model for a 'stire' from newsfeed
 class News(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

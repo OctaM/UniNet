@@ -9,6 +9,27 @@ body {
     padding: 2%;
 }
 
+.form-class input[type="email"],
+.form-class input[type="password"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition   : all 0.30s ease-in-out;
+    -ms-transition    : all 0.30s ease-in-out;
+    -o-transition     : all 0.30s ease-in-out;
+    outline           : none;
+    box-sizing        : border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    width             : 100%;
+    background        : #fff;
+    margin-bottom     : 4%;
+    border            : 1px solid #ccc;
+    box-shadow        : 0 0 5px red;
+    padding           : 3%;
+    border            : 1px solid red;
+    color             : #555;
+    font              : 95% Arial, Helvetica, sans-serif;
+}
+
 .form-style input[type="email"],
 .form-style input[type="password"]
 {
@@ -72,4 +93,14 @@ body {
   width: 90%;
   height: auto;
 
+}
+
+.error-message {
+    text-align : center;
+    font-weight: bold;
+    color      : red;
+}
+
+form {
+    margin-bottom: 0px;
 }

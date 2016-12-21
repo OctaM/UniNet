@@ -1,0 +1,200 @@
+/* ------------ General --------------*/
+body {
+  margin:0;
+  padding: 0;
+  background: #f2f2f4;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+textarea {
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  background: #fff;
+  width: 490px;
+  height: 65px;
+  border: 0;
+  padding: 4px;
+  margin-top:10px;
+  margin-left: 5px;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.form-style input[type="submit"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 10%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+}
+.post-button:hover{
+    background: #881d94;
+}
+
+.post-button{
+  color: #fff;
+  background: #62056c;
+  float:right;
+  border-bottom: 2px solid #62056c;
+}
+
+
+
+/* ------------ General --------------*/
+/* ------------ Feed -----------------*/
+
+.feed-container {
+  margin-top: 30px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+}
+.feed-box{
+  width: 600px;
+  position: relative;
+  background: #ffffff;
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0bbbb;
+  box-shadow: 1px 3px 15px 0px rgba(106,101,107,0.3);
+  padding: 10px;
+}
+
+.feed-box-avatar{
+  height: 90px;
+  width: 90px;
+  background: #62056c;
+  float: left;
+  clear: both;
+  margin: 10px 10px 10px 0px;
+  background-image: url(/assets/images/Users/user1.jpg);
+  background-size: cover;
+}
+
+.purple-top{
+  background: #62056c;
+  height: 10px;
+  width: 120%;
+  margin-left: -20px;
+  margin-top:-10px
+}
+
+.feed-box-content{
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.feed-box-name{
+  float:left;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* ------------ Feed -----------------*/
+/* ------------ Banner -----------------*/
+
+.banner{
+  height:50px;
+  width: 100%;
+  position: fixed;
+  background: #62056c;
+  top: 0px;
+  z-index: 1
+}
+
+.banner-image{
+  height: 30px;
+  width: auto;
+  margin-top:10px;
+  margin-left: 10px;
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  float:right;
+}
+
+/* ------------ Banner -----------------*/
+/* ------------ Comment Section -----------------*/
+
+.comment-section{
+  position: relative;
+  margin:10px 30px 0px 30px;
+}
+
+.comment{
+  position: relative;
+  display: inline;
+}
+
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  background: #62056c;
+  float: left;
+  margin-top: 5px;
+  background-image: url(/assets/images/Users/user2.jpg);
+  background-size: cover;
+}
+
+.comment-author{
+  padding-top: 5px;
+  margin: 0px 15px 2px 55px;
+  left:60px;
+}
+#snippet{
+    font-weight: bold;
+    cursor: pointer;
+}
+input[name="comment-form"] {
+  box-sizing: border-box;
+  width: 88%;
+  outline: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin-left: 5px;
+  color: #555;
+}
+
+.comment-content{
+  margin-left: 55px;
+  margin-top: 0px;
+}
+
+.separator{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+/* ------------ Comment Section -----------------*/
